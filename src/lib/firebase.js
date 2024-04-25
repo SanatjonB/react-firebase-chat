@@ -1,17 +1,16 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AuthDomain,
-  projectId: import.meta.env.VITE_ProjectId,
-  storageBucket: import.meta.env.VITE_StorageBucket,
-  messagingSenderId: import.meta.env.VITE_MessagingSenderId,
-  appId: import.meta.env.VITE_AppId,
-  measurementId: import.meta.env.VITE_MeasurementId,
+  apiKey: import.meta.env.API_KEY,
+  authDomain: import.meta.env.AuthDomain,
+  projectId: import.meta.env.ProjectId,
+  storageBucket: import.meta.env.StorageBucket,
+  messagingSenderId: import.meta.env.MessagingSenderId,
+  appId: import.meta.env.AppId,
+  measurementId: import.meta.env.MeasurementId,
 };
 
 const app = initializeApp(firebaseConfig);
